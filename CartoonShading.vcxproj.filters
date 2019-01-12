@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{2c3d4c8c-5d1a-459a-a05a-a4e4b608a44e}</UniqueIdentifier>
+      <Extensions>fx;fxh;hlsl</Extensions>
+    </Filter>
+    <Filter Include="Orbit Camera">
+      <UniqueIdentifier>{a2a0009a-3dd8-45c9-a430-1258c6dfdfae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tor">
+      <UniqueIdentifier>{b4d9054f-96c4-44a4-8c75-602cdfcbb821}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="orbit_camera.cpp">
+      <Filter>Orbit Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="tor.cpp">
+      <Filter>Tor</Filter>
+    </ClCompile>
+    <ClCompile Include="DDSTextureLoader.cpp" />
+    <ClCompile Include="cartoon_shading.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ClInclude Include="orbit_camera.h">
+      <Filter>Orbit Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="tor.h">
+      <Filter>Tor</Filter>
+    </ClInclude>
+    <ClInclude Include="DDSTextureLoader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="cartoon_shading.fx">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="cartoon_shading_PS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="cartoon_shading_VS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="outline.fx">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="outline_PS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="outline_VS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="default.fx">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="default_PS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="default_VS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CartoonShading.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
